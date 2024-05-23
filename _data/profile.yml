@@ -21,13 +21,13 @@ short_bio: >-
   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
 show_portrait: true
-portrait_url: assets/images/photos/portrait.jpg
+portrait_url: assets/images/photos/avatar.png
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash.
 
 education:
 - name: Boston University
-  logo: assets/images/badges/PKU_red.png
+  logo: assets/images/badges/BU-icon.png
   position: M.S. in Electrical and Computer Engineering
   date: Sep. 2022 - Jan. 2024
 
