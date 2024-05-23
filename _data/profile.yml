@@ -1,11 +1,11 @@
-primary_name: "Your Name"
+primary_name: "Yifan Wu"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Yifan Wu"
 
 positions:
   - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
 
-email: "your@email.com"
+email: "wuyifan1@edu"
 gscholar: your_google_scholar_id
 github: your_github_id
 twitter: your_twitter_id
