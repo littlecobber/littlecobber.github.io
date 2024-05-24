@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Yifan Wu"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
+  - '<span class="no-break"><img src="assets/images/badges/BU-icon.png" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
 
 email: "wuyifan1@edu"
 gscholar: your_google_scholar_id
@@ -16,9 +16,8 @@ twitter: your_twitter_id
 # orcid: 0000-0000-0000-0000
 
 short_bio: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  I am a graduate with a Master degree from Boston University, where I was supervised by Prof. Janusz Konrad and Prof. Brian Kulis. I received my B.Eng. degree with honors from Yangzhou University, under the supervision of Prof. Wei Jiang.
+  I am currently conducting research in Computer Graphics Group at The University of Hong Kong, supervised by Prof. Taku Komura.
 
 show_portrait: true
 portrait_url: assets/images/photos/avatar.png
