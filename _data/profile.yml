@@ -29,6 +29,10 @@ education:
   logo: assets/images/badges/BU-icon.png
   position: M.S. in Electrical and Computer Engineering
   date: Sep. 2022 - Jan. 2024
+- name: Yangzhou University
+  logo: assets/images/badges/YZU-icon.jpg
+  position: B.ENG. in Electrical Engineering
+  date: Sep.2018 - June. 2022
 
 # experience:
 # - name: Peking University
