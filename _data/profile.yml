@@ -26,7 +26,7 @@ portrait_caption: >-
 
 education:
 - name: HongKong University
-  logo: asset/images/badges/HKU-icon.jpg
+  logo: assets/images/badges/HKU-icon.jpg
   position: Research Assistant
   date: Feb. 2024 - Present
 - name: Boston University
