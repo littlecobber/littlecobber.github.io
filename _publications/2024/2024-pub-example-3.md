@@ -1,5 +1,5 @@
 ---
-title:          FCIL: Fish Crowd Imitation Learning from Real Videos
+title:          Fish Crowd Imitation Learning from Real Videos
 date:           2024-07-29 00:01:00 +0800
 selected:       true
 pub:            "SIGGRAPH Asia 2024 TOG (ACM Transactions on Graphics)"
