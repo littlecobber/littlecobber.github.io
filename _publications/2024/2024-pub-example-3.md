@@ -22,5 +22,5 @@ authors:
   - Taku Komura
 links:
   Paper: https://github.com/luost26/academic-homepage
-  Project page: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
+  Project: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
