@@ -45,12 +45,22 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
-- name: Award Name 2
+- name: MIT-Interdisciplinary Quantum Information Science and Engineering
   date: 2024
-- name: Award Name 1 
+- name: President's Excellence Scholarship
+  date: 2020
+- name: National College Students Mathematical Contest in Modeling (2021) second place
   date: 2021
 
+hornors:
+- name: 2023 ECE Master's Community Award
+- date: 2023
+- name: Teaching Assistant for EC601
+- data: 2023
+
 news:
+- name: two paper submitted to SIGGRAPH 2025.
+- name: two paper submitted to CVPR 2025.
 - name: one paper accepted to SIGGRAPH Aisa 2024 TOG.
 
 
