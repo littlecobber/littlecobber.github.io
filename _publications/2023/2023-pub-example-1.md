@@ -8,7 +8,7 @@ pub_date:       "N/A"
 #  Photo by Thomas Renaud on Unsplash. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 cover:          assets/images/covers/FBINeRF_Rep.png
 authors:
-- Yifan Wu
+- Yifan Wu # **Yifan Wu**
 - Tianyi Cheng
 - Peixu Xin
 - Janusz Konrad
