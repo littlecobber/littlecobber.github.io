@@ -51,12 +51,10 @@ awards:
   date: 2020
 - name: National College Students Mathematical Contest in Modeling (2021) second place
   date: 2021
-
-hornors:
 - name: 2023 ECE Master's Community Award
-- date: 2023
+  date: 2023
 - name: Teaching Assistant for EC601
-- data: 2023
+  data: 2023
 
 news:
 - name: two paper submitted to SIGGRAPH 2025.
