@@ -1,5 +1,5 @@
 ---
-title:          FBINeRF: Feature-Based Integrated Recurrent Network for Pinhole and Fisheye Neural Radiance Fields
+title:          FBINeRF:Feature-Based Integrated Recurrent Network for Pinhole and Fisheye Neural Radiance Fields
 date:           2023-01-05 00:01:00 +0800
 selected:       true
 pub:            "ECCV 2025 (prepared)"
