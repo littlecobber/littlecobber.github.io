@@ -38,11 +38,23 @@ education:
   position: B.ENG. in Electrical Engineering
   date: Sep.2018 - Jun. 2022
 
-# experience:
-# - name: Peking University
-#   logo: assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: The University of Hong Kong
+  logo: assets/images/badges/HKU.png
+  position: Research Assistant
+  data: Feb. 2024 - Present
+- namn: SoftBank
+  logo: assets/images/badges/SB.png
+  position: Intern
+  date: Feb. 2024 - May. 2024
+- name: ScaleAI
+  logo: assets/images/badges/ScaleAI.png
+  position: Intern
+  date: Dec. 2023 - Feb. 2024
+- name: Chinese Academy of Sciences
+  logo: assets/images/badges/Chinese-Academy-of-Sciences.jpeg
+  position: Research Assistant
+  date: Sep. 2021 - Nov. 2021
 
 awards:
 - name: MIT-Interdisciplinary Quantum Information Science and Engineering
