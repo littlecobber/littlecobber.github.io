@@ -1,5 +1,5 @@
 ---
-title:          CBIL: Collective Behavior Imitation Learning for Fish from Real Videos
+title:          CBIL:Collective Behavior Imitation Learning for Fish from Real Videos
 date:           2024-07-29 00:01:00 +0800
 selected:       true
 pub:            "SIGGRAPH Asia 2024 TOG (ACM Transactions on Graphics)"
