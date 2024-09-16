@@ -22,6 +22,6 @@ authors:
   - Taku Komura
 links:
   Paper: https://github.com/luost26/academic-homepage
-  Project Page: https://github.com/luost26/academic-homepage
-  Code: https://github.com/littlecobber/FCIL
+  Project Page: https://frank-zy-dou.github.io/projects/CBIL/index.html
+  Code: https://github.com/littlecobber/CBIL
 ---
