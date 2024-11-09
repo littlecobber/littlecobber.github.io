@@ -25,6 +25,8 @@ links:
   Project Page: https://frank-zy-dou.github.io/projects/CBIL/index.html
   Code: https://github.com/littlecobber/CBIL
 ---
+
+---
 title:          DCM : Deep Crowd Motion Recovery from Fish using Learnable Triangulation
 date:           2024-11-9 00:01:00 +0800
 selected:       true
@@ -48,4 +50,5 @@ links:
   Paper: https://github.com/luost26/academic-homepage
   Project Page: https://github.com/luost26/academic-homepage
   Code: https://github.com/luost26/academic-homepage
+---
 
