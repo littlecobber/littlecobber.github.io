@@ -21,8 +21,8 @@ authors:
   - Lingjie Liu
   - Taku Komura
 links:
-  Paper: https://github.com/luost26/academic-homepage
-  Project Page: https://frank-zy-dou.github.io/projects/CBIL/index.html
+  Paper: https://dl.acm.org/doi/10.1145/3687904
+  Project Page: https://littlecobber.github.io/CBIL-Project/
   Code: https://github.com/littlecobber/CBIL
   presentation: https://docs.google.com/presentation/d/1-e88nhSXz2mKW-7vnUDFRUM5-_YbNYoF/edit?usp=sharing&ouid=101992507946767109760&rtpof=true&sd=true
 ---
