@@ -52,10 +52,9 @@ img.lazy {
 }
 
 .nav-img {
-    width: 4px;  /* 调整图片大小 */
-    height: 4px;
-    margin-right: 8px; /* 和名字之间留点间距 */
-    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* 保持图像的宽高比 *
 }
 
 .badge-custom {
