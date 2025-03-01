@@ -52,9 +52,8 @@ img.lazy {
 }
 
 .nav-img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;  /* 保持图像的宽高比 *
+    width: 24px;     
+    height: 24px;   
 }
 
 .badge-custom {
