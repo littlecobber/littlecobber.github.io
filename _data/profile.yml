@@ -1,7 +1,6 @@
 primary_name: "Yifan Wu"
 secondary_name: ""
-# navbar_name: "Yifan Wu"
-navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/> Yifan Wu'
+navbar_name: "Yifan Wu"
 
 
 positions:
