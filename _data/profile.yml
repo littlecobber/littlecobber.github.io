@@ -1,7 +1,7 @@
 primary_name: "Yifan Wu"
 secondary_name: ""
-# navbar_name: "Yifan Wu"
-navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/> Yifan Wu'
+navbar_name: "Yifan Wu"
+# navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/> Yifan Wu'
 
 positions:
   - '<span class="no-break"><img src="assets/images/badges/BU-icon.png" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
