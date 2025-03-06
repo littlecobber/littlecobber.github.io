@@ -24,7 +24,7 @@ authors:
   - Taku Komura
 
 links:
-  Paper: https://littlecobber.github.io/
+  Paper: https://arxiv.org/abs/2411.19921
   Project Page: https://littlecobber.github.io/
   Code: https://github.com/littlecobber/DCMR/tree/main
 ---
