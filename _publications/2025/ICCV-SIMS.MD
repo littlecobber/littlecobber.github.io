@@ -10,7 +10,7 @@ pub_pre:        "preprint "
 
 # abstract: >-
   # Photo by Pineapple Supply Co. on Unsplash. Massa ultricies mi quis hendrerit dolor magna. Arcu non odio euismod lacinia at quis risus sed. Et tortor at risus viverra. Enim neque volutpat ac tincidunt. Dictum varius duis at consectetur lorem donec.
-cover:          assets/images/covers/123.png
+cover:          assets/images/covers/SIMS.png
 authors:
   - Wenjia Wang
   - Liang Pan
