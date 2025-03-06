@@ -1,5 +1,5 @@
 ---
-title:          SIMS: Simulating Human-Scene Interactions with Real World Script Planning
+title:          SIMS:Simulating Human-Scene Interactions with Real World Script Planning
 date:           2025-3-7 00:01:00 +0800
 selected:       true
 pub:            "arXiv 2025"
