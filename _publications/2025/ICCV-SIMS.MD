@@ -17,8 +17,8 @@ authors:
   - Zhiyang Dou
   - Jidong Mei
   - Zhouyingcheng Liao
-  - Yifan Wu
   - Yuke Lou
+  - Yifan Wu
   - Jingbo Wang
   - Lei Yang
   - Taku Komura
@@ -26,5 +26,5 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2411.19921
   Project Page: https://wenjiawang0312.github.io/projects/sims/
-  Code: https://github.com/littlecobber/DCMR/tree/main
+  Code: https://wenjiawang0312.github.io/projects/sims/
 ---
