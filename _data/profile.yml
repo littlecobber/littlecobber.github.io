@@ -42,10 +42,14 @@ education:
   date: Sep.2018 - Jun. 2022
 
 experience:
+- name: Tencent (Timi Studio Group, Video Generation Research)
+  logo: assets/images/badges/timi.png
+  position: Intern
+  date: May.2025 - Sep. 2025 (Expected)
 - name: The University of Hong Kong
   logo: assets/images/badges/HKU-icon.jpg
   position: Research Assistant
-  date: Feb. 2024 - Present
+  date: Feb. 2024 - Mar. 2025
 - name: SoftBank
   logo: assets/images/badges/SB.png
   position: Intern
