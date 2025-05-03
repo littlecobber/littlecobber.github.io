@@ -1,4 +1,4 @@
-@charset "utf-8";
+/* @charset "utf-8";
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .text-profile-bio {
-    /* font-family: "Raleway"; */
     font-weight: 400;
 }
 
@@ -72,5 +71,101 @@ img.lazy {
   object-fit: contain;
   margin-right: 10px;  
   vertical-align: middle;
+} */
+@charset "utf-8";
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding-top: 5.0rem;
 }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+.text-profile-position {
+    font-weight: 400;
+}
+
+.text-profile-bio {
+    /* font-family: "Raleway"; */
+    font-weight: 400;
+}
+
+.navbar {
+    opacity: 0.95;
+}
+
+.inline-badge {
+    height: 16px;
+    vertical-align: -10%;
+    margin-right: 2px;
+    line-break: unset;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+/* 出版物封面图片和视频样式 */
+.cover-image {
+    width: 300px;
+    max-height: 200px;
+}
+
+.publication-media {
+    max-width: 500px !important;
+    max-height: 400px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.publication-media-mobile {
+    max-height: 400px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 禁用视频交互 */
+.publication-media video,
+.publication-media-mobile video {
+    pointer-events: none;
+}
+
+.abstract-body {
+    min-height: 100px;
+}
+
+img.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+.nav-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.badge-custom {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: Courier, monospace;
+}
+
+.experience-logo {
+  width: 48px;   
+  height: 48px;
+  object-fit: contain;
+  margin-right: 10px;  
+  vertical-align: middle;
+} 
+
 
