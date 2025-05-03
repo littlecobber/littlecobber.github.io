@@ -11,6 +11,7 @@ pub_date:       "2024"
 # abstract: >-
   # Photo by Pineapple Supply Co. on Unsplash. Massa ultricies mi quis hendrerit dolor magna. Arcu non odio euismod lacinia at quis risus sed. Et tortor at risus viverra. Enim neque volutpat ac tincidunt. Dictum varius duis at consectetur lorem donec.
 cover:          assets/images/covers/FCIL-cover.png
+video:          assets/videos/SOFT_cover.mp4
 authors:
   - Yifan Wu # **Yifan Wu**
   - Zhiyang Dou 
