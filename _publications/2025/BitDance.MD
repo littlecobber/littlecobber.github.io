@@ -13,19 +13,15 @@ pub:            "preprint"
 cover:          assets/images/covers/SIMS.png
 video:          assets/videos/bitdance_cover.mp4
 authors:
-  - Wenjia Wang
-  - Liang Pan
-  - Zhiyang Dou
-  - Jidong Mei
-  - Zhouyingcheng Liao
-  - Yuke Lou
   - Yifan Wu
-  - Jingbo Wang
-  - Lei Yang
+  - Zhongfei Qing
+  - Dafei Qin
+  - Wenjia Wang
+  - Yuke Lou
   - Taku Komura
 
 links:
-  Paper: https://arxiv.org/abs/2411.19921
-  Project Page: https://wenjiawang0312.github.io/projects/sims/
-  Code: https://wenjiawang0312.github.io/projects/sims/
+  # Paper: None
+  Project Page: https://littlecobber.github.io/BitDance/
+  # Code: https://wenjiawang0312.github.io/projects/sims/
 ---
