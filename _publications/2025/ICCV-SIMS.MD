@@ -11,6 +11,7 @@ pub:            "ICCV 2025"
 # abstract: >-
   # Photo by Pineapple Supply Co. on Unsplash. Massa ultricies mi quis hendrerit dolor magna. Arcu non odio euismod lacinia at quis risus sed. Et tortor at risus viverra. Enim neque volutpat ac tincidunt. Dictum varius duis at consectetur lorem donec.
 cover:          assets/images/covers/SIMS.png
+video:          assets/videos/SIM_cover.mp4
 authors:
   - Wenjia Wang
   - Liang Pan
