@@ -1,6 +1,6 @@
 
 ---
-title:          BitDance: Long-Range Motion Transfer for Stylized Anime Characters via Autoregressive Diffusion
+title:          BitDance:Long-Range Motion Transfer for Stylized Anime Characters via Autoregressive Diffusion
 date:           2025-7-4 00:01:00 +0800
 selected:       true
 pub:            "preprint"
