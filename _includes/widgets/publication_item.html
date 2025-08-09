@@ -83,8 +83,9 @@ video {
     <div class="row no-gutters border-bottom border-gray">
         <div class="col-md-4 col-xl-3 mb-md-0 p-md-3">
             {% if item.video %}
-            <video class="w-100 rounded-sm publication-media" autoplay loop muted playsinline>
+            <video class="w-100 rounded-sm publication-media" autoplay loop muted playsinline preload="metadata" controls>
                 <source src="{{ item.video }}" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
             {% else %}
             <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm publication-media" src="assets/images/empty_300x200.png">
@@ -111,8 +112,9 @@ video {
 
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
     {% if item.video %}
-    <video class="w-100 publication-media-mobile" autoplay loop muted playsinline>
+    <video class="w-100 publication-media-mobile" autoplay loop muted playsinline preload="metadata" controls>
         <source src="{{ item.video }}" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
     {% else %}
     <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy card-img w-100 publication-media-mobile" src="assets/images/empty_300x200.png">
