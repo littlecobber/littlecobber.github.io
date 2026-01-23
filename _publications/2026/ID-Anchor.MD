@@ -2,7 +2,7 @@
 title:          ID-Anchor:Identity-Preserving Character Animation via Tuning-Free Attention Masking for Multi-Person Scenes
 date:           2026-1-23 00:01:00 +0800
 selected:       true
-pub:            "Siggraph 2026 Journal Track Submitted"
+pub:            "Paper Submitted"
 # pub_pre:        "preprint "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-custom badge-success">Spotlight</span>'
