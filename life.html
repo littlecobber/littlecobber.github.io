@@ -3,10 +3,25 @@ layout: default
 title: Life & Memory
 ---
 
+<!-- Sticky Top Timeline Navigation -->
+<div class="sticky-top bg-white border-bottom shadow-sm py-2" style="top: 50px; z-index: 999; overflow-x: auto;">
+    <div class="container">
+        <div class="d-flex flex-nowrap align-items-center">
+            <span class="mr-3 text-muted font-weight-bold small"><i class="fas fa-history mr-1"></i>Timeline:</span>
+            {% for item in site.data.life %}
+            <a href="#{{ item.city | slugify }}" class="btn btn-sm btn-outline-secondary rounded-pill mr-2 text-nowrap">
+                {{ item.date }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 <div class="container mt-5 mb-5">
     <div class="timeline">
         {% for item in site.data.life %}
-        <div class="timeline-container {% cycle 'left', 'right' %}">
+        <!-- Added id for anchor linking and scroll-margin-top for offset -->
+        <div class="timeline-container {% cycle 'left', 'right' %}" id="{{ item.city | slugify }}" style="scroll-margin-top: 120px;">
             <div class="timeline-content shadow-sm bg-white p-4 rounded">
                 <h2 class="h5 font-weight-bold text-primary">{{ item.date }}</h2>
                 <h3 class="h6 mb-3 text-secondary"><i class="fas fa-map-marker-alt mr-2"></i>{{ item.city }}</h3>
@@ -22,3 +37,18 @@ title: Life & Memory
         {% endfor %}
     </div>
 </div>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+/* Hide scrollbar for chrome/safari/opera */
+.sticky-top::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.sticky-top {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>
