@@ -98,24 +98,28 @@
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                {% if site.data.profile.experience %}
-                <div class="row">
-                    <div class="col">
-                        <div class="mx-2 my-1">
-                            <h6>Experience</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.experience %}
-                                <li class="mb-2">
-                                    <p class="my-0"><strong>{{ item.name }}</strong></p>
-                                    <p class="small my-0">{{ item.dept }}</p>
-                                    <p class="small my-0">{{ item.position }} <em class="float-right">{{ item.date }}</em></p>
-                                </li>
-                                {% endfor %}
-                            </ul>
+                <div class="mx-2 my-1">
+                    <h6 class="mb-4">Experience</h6>
+                    {% if site.data.profile.experience %}
+                        {% for item in site.data.profile.experience %}
+                        <div class="row mb-4">
+                            <div class="col-3 col-lg-2">
+                                <div class="experience-logo-box">
+                                    <img src="{{ item.logo }}" alt="{{ item.name }}" class="experience-logo-img">
+                                </div>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <h6 class="font-weight-bold mt-2">{{ item.name }}</h6>
+                                <p class="small mb-1">{{ item.dept }}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="small mb-0 font-weight-bold">{{ item.position }}</p>
+                                    <p class="small text-muted mb-0">{{ item.date }}</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        {% endfor %}
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
         </div>
     </div>
@@ -134,4 +138,3 @@
         </div>
     </div>
 </div>
-

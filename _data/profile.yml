@@ -46,10 +46,14 @@ education:
   date: Sep.2018 - Jun. 2022
 
 experience:
-- name: Tencent (Timi Studio Group, Video Generation Research)
+- name: Tencent (Hunyuan)
+  logo: assets/images/badges/hunyuan.png
+  position: Intern
+  date: Feb. 2026 - Current
+- name: Tencent (Timi Studio Group)
   logo: assets/images/badges/timi.png
   position: Intern
-  date: May.2025 - Current
+  date: May.2025 - Jan. 2026
 - name: The University of Hong Kong
   logo: assets/images/badges/HKU-icon.jpg
   position: Research Assistant
