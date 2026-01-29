@@ -1,0 +1,24 @@
+---
+layout: default
+title: Life & Memory
+---
+
+<div class="container mt-5 mb-5">
+    <div class="timeline">
+        {% for item in site.data.life %}
+        <div class="timeline-container {% cycle 'left', 'right' %}">
+            <div class="timeline-content shadow-sm bg-white p-4 rounded">
+                <h2 class="h5 font-weight-bold text-primary">{{ item.date }}</h2>
+                <h3 class="h6 mb-3 text-secondary"><i class="fas fa-map-marker-alt mr-2"></i>{{ item.city }}</h3>
+                <div class="photo-grid">
+                    {% for img in item.images %}
+                    <div class="grid-item">
+                        <img src="{{ img }}" alt="{{ item.city }}" class="img-fluid rounded lazy-load-image">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

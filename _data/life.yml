@@ -1,0 +1,121 @@
+- city: "HongKong"
+  date: "Dec 2025"
+  images:
+    - assets/images/Traveling/2025/HongKong/1.jpg
+    - assets/images/Traveling/2025/HongKong/2.jpg
+    - assets/images/Traveling/2025/HongKong/3.jpg
+    - assets/images/Traveling/2025/HongKong/4.jpg
+    - assets/images/Traveling/2025/HongKong/5.jpg
+    - assets/images/Traveling/2025/HongKong/6.jpg
+    - assets/images/Traveling/2025/HongKong/7.jpg
+    - assets/images/Traveling/2025/HongKong/8.jpg
+    - assets/images/Traveling/2025/HongKong/9.jpg
+
+
+- city: "Hawaii"
+  date: "Oct 2025"
+  images:
+    - assets/images/Traveling/2025/Hawaii/1.jpg
+    - assets/images/Traveling/2025/Hawaii/2.jpg
+    - assets/images/Traveling/2025/Hawaii/3.jpg
+    - assets/images/Traveling/2025/Hawaii/4.jpg
+    - assets/images/Traveling/2025/Hawaii/5.jpg
+    - assets/images/Traveling/2025/Hawaii/6.jpg
+    - assets/images/Traveling/2025/Hawaii/7.jpg
+    - assets/images/Traveling/2025/Hawaii/8.jpg
+    - assets/images/Traveling/2025/Hawaii/9.jpg
+
+- city: "Vancouver"
+  date: "Aug 2025"
+  images:
+    - assets/images/Traveling/2025/Vancouver/1.jpg
+    - assets/images/Traveling/2025/Vancouver/2.jpg
+    - assets/images/Traveling/2025/Vancouver/3.jpg
+    - assets/images/Traveling/2025/Vancouver/4.jpg
+    - assets/images/Traveling/2025/Vancouver/5.jpg
+    - assets/images/Traveling/2025/Vancouver/6.jpg
+    - assets/images/Traveling/2025/Vancouver/7.jpg
+    - assets/images/Traveling/2025/Vancouver/8.jpg
+    - assets/images/Traveling/2025/Vancouver/9.jpg
+
+
+- city: "Japan"
+  date: "Dec 2024"
+  images:
+    - assets/images/Traveling/2024/Japan/1.jpg
+    - assets/images/Traveling/2024/Japan/2.jpg
+    - assets/images/Traveling/2024/Japan/3.jpg
+    - assets/images/Traveling/2024/Japan/4.jpg
+    - assets/images/Traveling/2024/Japan/5.jpg
+    - assets/images/Traveling/2024/Japan/6.jpg
+    - assets/images/Traveling/2024/Japan/7.jpg
+    - assets/images/Traveling/2024/Japan/8.jpg
+    - assets/images/Traveling/2024/Japan/9.jpg
+
+- city: "Boston"
+  date: "Aug 2024"
+  images:
+    - assets/images/Traveling/2024/Boston/1.jpg
+    - assets/images/Traveling/2024/Boston/2.jpg
+    - assets/images/Traveling/2024/Boston/3.jpg
+    - assets/images/Traveling/2024/Boston/4.jpg
+    - assets/images/Traveling/2024/Boston/5.jpg
+    - assets/images/Traveling/2024/Boston/6.jpg
+    - assets/images/Traveling/2024/Boston/7.jpg
+    - assets/images/Traveling/2024/Boston/8.jpg
+    - assets/images/Traveling/2024/Boston/9.jpg
+
+- city: "NewYork"
+  date: "Jan 2024"
+  images:
+    - assets/images/Traveling/2024/NewYork/1.jpg
+    - assets/images/Traveling/2024/NewYork/2.jpg
+    - assets/images/Traveling/2024/NewYork/3.jpg
+    - assets/images/Traveling/2024/NewYork/4.jpg
+    - assets/images/Traveling/2024/NewYork/5.jpg
+    - assets/images/Traveling/2024/NewYork/6.jpg
+    - assets/images/Traveling/2024/NewYork/7.jpg
+    - assets/images/Traveling/2024/NewYork/8.jpg
+    - assets/images/Traveling/2024/NewYork/9.jpg
+
+
+- city: "Uchicago"
+  date: "Dec 2023"
+  images:
+    - assets/images/Traveling/2023/Uchicago/1.jpg
+    - assets/images/Traveling/2023/Uchicago/2.jpg
+    - assets/images/Traveling/2023/Uchicago/3.jpg
+    - assets/images/Traveling/2023/Uchicago/4.jpg
+    - assets/images/Traveling/2023/Uchicago/5.jpg
+    - assets/images/Traveling/2023/Uchicago/6.jpg
+    - assets/images/Traveling/2023/Uchicago/7.jpg
+    - assets/images/Traveling/2023/Uchicago/8.jpg
+    - assets/images/Traveling/2023/Uchicago/9.jpg
+
+- city: "California"
+  date: "May 2023"
+  images:
+    - assets/images/Traveling/2023/California/1.jpg
+    - assets/images/Traveling/2023/California/2.jpg
+    - assets/images/Traveling/2023/California/3.jpg
+    - assets/images/Traveling/2023/California/4.jpg
+    - assets/images/Traveling/2023/California/5.jpg
+    - assets/images/Traveling/2023/California/6.jpg
+    - assets/images/Traveling/2023/California/7.jpg
+    - assets/images/Traveling/2023/California/8.jpg
+    - assets/images/Traveling/2023/California/9.jpg
+
+- city: "Puerto Rico"
+  date: "March 2023"
+  images:
+    - assets/images/Traveling/2023/Puerto Rico/1.jpg
+    - assets/images/Traveling/2023/Puerto Rico/2.jpg
+    - assets/images/Traveling/2023/Puerto Rico/3.jpg
+    - assets/images/Traveling/2023/Puerto Rico/4.jpg
+    - assets/images/Traveling/2023/Puerto Rico/5.jpg
+    - assets/images/Traveling/2023/Puerto Rico/6.jpg
+    - assets/images/Traveling/2023/Puerto Rico/7.jpg
+    - assets/images/Traveling/2023/Puerto Rico/8.jpg
+    - assets/images/Traveling/2023/Puerto Rico/9.jpg
+    
+
