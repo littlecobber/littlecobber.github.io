@@ -96,8 +96,9 @@ img.lazy {
 
 /* Experience Section Styles */
 .experience-logo-box {
-    width: 100%;
-    height: 100px; /* Fixed height for the rectangle */
+    width: 140px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    min-width: 140px; /* Prevent shrinking */
     background-color: #fff; /* White background */
     display: flex;
     align-items: center;

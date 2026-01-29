@@ -103,12 +103,12 @@
                     {% if site.data.profile.experience %}
                         {% for item in site.data.profile.experience %}
                         <div class="row mb-4">
-                            <div class="col-3 col-lg-2">
+                            <div class="col-auto">
                                 <div class="experience-logo-box">
                                     <img src="{{ item.logo }}" alt="{{ item.name }}" class="experience-logo-img">
                                 </div>
                             </div>
-                            <div class="col-9 col-lg-10">
+                            <div class="col">
                                 <h6 class="font-weight-bold mt-2">{{ item.name }}</h6>
                                 <p class="small mb-1">{{ item.dept }}</p>
                                 <div class="d-flex justify-content-between align-items-center">
