@@ -6,8 +6,8 @@ navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/
 positions:
   - '<span class="no-break"><img src="assets/images/badges/BU-icon.png" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
 
-email: "wuyifan1@hku.hk"
-# gscholar: your_google_scholar_id
+email: "wuyifan1@bu.edu"
+gscholar: UruMKUkAAAAJ&hl
 github: \#81452190
 twitter: 13914253903Kris
 # wechat_qrcode: assets/images/etc/wechat.jpg
@@ -24,7 +24,7 @@ short_bio: |
   
   I served as a research assistant at the <a href="https://hku-cg.github.io/">CGVU Lab</a> at The University of Hong Kong, supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/taku">Prof. Taku Komura</a>.
 
-  My research interests lie in Graphics, AIGC, and World Models. I have previously worked on physical simulation, 3D reconstruction, and animation with UE5 and Unity. I am raising funding to support our current products.
+  My research interests lie in Graphics, AIGC, and World Models. I have previously worked on physical simulation, 3D reconstruction, and animation. Seeking Ph.D. opportunities starting Fall 2027.
   </div>
 show_portrait: true
 portrait_url: assets/images/photos/NewAva.png
@@ -88,7 +88,7 @@ awards:
 news:
 - name: "<span style=\"color: red;\">Industry Product Infinite Canvas for short dramas</span>, code will be released after security check by company"
 - name: BitDance project demo released, code and paper coming soon~
-- name: one paper submitted to SIGGRAPH 2026
+- name: two paper submitted to SIGGRAPH 2026
 - name: one paper submitted to CVPR 2026
 - name: one paper accepted to ICCV 2025.
 - name: one paper accepted to SIGGRAPH Aisa 2024 TOG.
