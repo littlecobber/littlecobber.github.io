@@ -258,3 +258,9 @@ img.lazy {
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* Publication Highlight */
+.publication-highlight {
+    background-color: #fff9db !important; /* Light yellow */
+    border-left: 4px solid #fcc419 !important; /* Yellow border accent */
+}

@@ -79,8 +79,14 @@ video {
 </style>  -->
 
 {% assign item = include.item %}
+{% assign first_author = item.authors[0] %}
+{% assign highlight_class = "" %}
+{% if first_author contains "Yifan Wu" %}
+    {% assign highlight_class = "publication-highlight" %}
+{% endif %}
+
 <div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
+    <div class="row no-gutters border-bottom border-gray {{ highlight_class }}">
         <div class="col-md-4 col-xl-3 mb-md-0 p-md-3">
             {% if item.video %}
             <video class="w-100 rounded-sm publication-media" autoplay loop muted playsinline preload="metadata" controls>
@@ -110,7 +116,7 @@ video {
     </div>
 </div>
 
-<div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
+<div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0 {{ highlight_class }}" style="overflow-y: scroll;">
     {% if item.video %}
     <video class="w-100 publication-media-mobile" autoplay loop muted playsinline preload="metadata" controls>
         <source src="{{ item.video }}" type="video/mp4">
@@ -138,4 +144,4 @@ video {
             </p>
         </div>
     </div>
-</div> 
+</div>
