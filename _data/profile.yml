@@ -24,7 +24,7 @@ short_bio: |
   
   I served as a research assistant at the <a href="https://hku-cg.github.io/">CGVU Lab</a> at The University of Hong Kong, supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/taku">Prof. Taku Komura</a>.
 
-  My research interests lie in Graphics, AIGC, and World Models. I have previously worked on physical simulation, 3D reconstruction, and animation. Seeking Ph.D. opportunities starting Fall 2027.
+  My research interests lie in Graphics, AIGC, and World Models. I have previously worked on physical simulation, 3D reconstruction, and animation. <span style=\"color: red;\">Seeking Ph.D. opportunities starting Fall 2027</span>.
   </div>
 show_portrait: true
 portrait_url: assets/images/photos/NewAva.png
@@ -77,6 +77,8 @@ experience:
 collaboration_img: assets/images/collaboration-2.png
 
 awards:
+- name: Tencent Project Up Scholarship Candidate
+  date: 2026
 - name: MIT-Interdisciplinary Quantum Information Science and Engineering
   date: 2024
 - name: President's Excellence Scholarship
