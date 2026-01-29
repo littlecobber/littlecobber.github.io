@@ -28,7 +28,9 @@ title: Life & Memory
                 <div class="photo-grid">
                     {% for img in item.images %}
                     <div class="grid-item">
-                        <img src="{{ img }}" alt="{{ item.city }}" class="img-fluid rounded lazy-load-image">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#imageModal" data-src="{{ img }}" class="d-block">
+                            <img src="{{ img }}" alt="{{ item.city }}" class="img-fluid rounded lazy-load-image">
+                        </a>
                     </div>
                     {% endfor %}
                 </div>
@@ -36,6 +38,20 @@ title: Life & Memory
         </div>
         {% endfor %}
     </div>
+</div>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body p-0 text-center position-relative">
+        <button type="button" class="close position-absolute text-white" data-dismiss="modal" aria-label="Close" style="top: -30px; right: 0; z-index: 1050; opacity: 1; text-shadow: none; font-size: 2rem;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="" id="modalImage" class="img-fluid rounded shadow-lg" style="max-height: 90vh;">
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
@@ -51,4 +67,25 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+/* Modal close button hover */
+.modal .close:hover {
+    opacity: 0.8;
+}
 </style>
+
+<script>
+// Wait for jQuery to be ready (assuming it's loaded in default layout)
+document.addEventListener("DOMContentLoaded", function() {
+    if (typeof $ !== 'undefined') {
+        $('#imageModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var src = button.data('src');
+            var modal = $(this);
+            modal.find('#modalImage').attr('src', src);
+        });
+    } else {
+        // Fallback or vanilla JS handling if needed, but site seems to rely on Bootstrap/jQuery
+        console.warn("jQuery not found, modal might not work correctly.");
+    }
+});
+</script>
