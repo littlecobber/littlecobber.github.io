@@ -105,7 +105,7 @@
                         <div class="row mb-4 {% unless forloop.last %}border-bottom pb-4{% endunless %}">
                             <div class="col-auto">
                                 <div class="experience-logo-box">
-                                    <img src="{{ item.logo }}" alt="{{ item.name }}" class="experience-logo-img">
+                                    <img src="{{ item.logo }}" alt="{{ item.name }}" class="experience-logo-img {% if item.large_logo %}experience-logo-large{% endif %}">
                                 </div>
                             </div>
                             <div class="col">

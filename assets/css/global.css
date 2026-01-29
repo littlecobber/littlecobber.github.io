@@ -114,3 +114,8 @@ img.lazy {
     max-height: 70%;
     object-fit: contain;
 }
+
+.experience-logo-large {
+    max-width: 90%;
+    max-height: 90%;
+}

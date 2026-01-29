@@ -48,10 +48,12 @@ education:
 experience:
 - name: Tencent (Hunyuan)
   logo: assets/images/badges/hunyuan.png
+  large_logo: true
   position: Intern
   date: Feb. 2026 - Current
 - name: Tencent (Timi Studio Group)
   logo: assets/images/badges/Timi-1.png
+  large_logo: true
   position: Intern
   date: May.2025 - Jan. 2026
 - name: The University of Hong Kong
@@ -60,6 +62,7 @@ experience:
   date: Feb. 2024 - Mar. 2025
 - name: SoftBank
   logo: assets/images/badges/SB.png
+  large_logo: true
   position: Intern
   date: Feb. 2024 - Mar. 2025
 - name: ScaleAI
