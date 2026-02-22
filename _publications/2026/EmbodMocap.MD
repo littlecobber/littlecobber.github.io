@@ -1,6 +1,6 @@
 ---
 title:          EmbodMocap:In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents
-date:           2026-1-23 00:02:00 +0800
+date:           2026-1-23 00:01:00 +0800
 selected:       true
 pub:            "CVPR 2026"
 # pub_pre:        "preprint "

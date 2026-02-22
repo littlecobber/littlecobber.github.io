@@ -1,6 +1,6 @@
 ---
 title:          ID-Anchor:Identity-Preserving Character Animation via Tuning-Free Attention Masking for Multi-Person Scenes
-date:           2026-1-23 00:01:00 +0800
+date:           2026-1-23 00:03:00 +0800
 selected:       true
 pub:            "Paper Submitted"
 # pub_pre:        "preprint "

@@ -1,6 +1,6 @@
 ---
 title:          4World:Hybrid World Model with Explicit 3D Memory and Generative Dynamics
-date:           2026-1-23 00:01:00 +0800
+date:           2026-1-23 00:02:00 +0800
 selected:       true
 pub:            "Paper Submitted"
 # pub_pre:        "preprint "
@@ -21,8 +21,8 @@ authors:
   - Baolin Liu
   - Taku Komura
 
-links:
-  Project Page: (coming soon)
-  Paper: (coming soon)
-  Code: (coming soon)
+# links:
+#   Project Page: (coming soon)
+#   Paper: (coming soon)
+#   Code: (coming soon)
 ---
