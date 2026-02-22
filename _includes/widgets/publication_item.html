@@ -18,7 +18,9 @@
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
-                {% if link[1].url %}
+                {% if link[1] == nil or link[1] == '' or link[1] == false %}
+                <span class="text-muted">[{{ link[0] }}]</span>
+                {% elsif link[1].url %}
                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
                 {% else %}
                 <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
@@ -47,7 +49,9 @@
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
-                {% if link[1].url %}
+                {% if link[1] == nil or link[1] == '' or link[1] == false %}
+                <span class="text-muted">[{{ link[0] }}]</span>
+                {% elsif link[1].url %}
                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
                 {% else %}
                 <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
@@ -105,7 +109,9 @@ video {
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
-                {% if link[1].url %}
+                {% if link[1] == nil or link[1] == '' or link[1] == false %}
+                <span class="text-muted">[{{ link[0] }}]</span>
+                {% elsif link[1].url %}
                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
                 {% else %}
                 <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
@@ -135,7 +141,9 @@ video {
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
-                {% if link[1].url %}
+                {% if link[1] == nil or link[1] == '' or link[1] == false %}
+                <span class="text-muted">[{{ link[0] }}]</span>
+                {% elsif link[1].url %}
                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
                 {% else %}
                 <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
