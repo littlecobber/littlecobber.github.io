@@ -85,8 +85,7 @@ awards:
   date: 2023
 
 news:
-- name: "<span style=\"color: red;\">Industry Product Infinite Canvas for short dramas</span>, code will be released after security check by company"
-- name: BitDance project demo released, code and paper coming soon~
+- name: Industry Product Infinite Canvas for short dramas, code will be released after security check by company
 - name: one paper accepted to CVPR 2026
 - name: one paper accepted to ICCV 2025
 - name: one paper accepted to SIGGRAPH Aisa 2024 TOG
