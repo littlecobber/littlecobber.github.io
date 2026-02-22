@@ -25,4 +25,6 @@ authors:
 
 links:
   Project Page: https://wenjiawang0312.github.io/projects/embodmocap/
+  Paper (Coming Soon): false
+  Code (Coming Soon): false
 ---
