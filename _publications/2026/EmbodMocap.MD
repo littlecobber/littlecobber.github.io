@@ -25,6 +25,7 @@ authors:
 
 links:
   Project Page: https://wenjiawang0312.github.io/projects/embodmocap/
-  Paper: https://wenjiawang0312.github.io/projects/embodmocap/CVPR2026_EmbodMocap.pdf
+  Paper: https://arxiv.org/abs/2602.23205
+  PDF: https://wenjiawang0312.github.io/projects/embodmocap/CVPR2026_EmbodMocap.pdf
   Code: https://github.com/WenjiaWang0312/EmbodMocap
 ---
