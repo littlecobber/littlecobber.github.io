@@ -1,17 +1,15 @@
-<nav class="navbar navbar-expand-sm navbar-light site-navbar fixed-top">
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
     <div class="container">
-        <a class="navbar-brand site-brand" href="./" aria-label="{{ site.data.profile.primary_name }} home">
-            <strong>{{site.data.profile.navbar_name}}</strong>
-        </a>
+        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto site-nav-list">
+            <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navigation.pages %}
                 <li class="nav-item {% if item.name == page.navbar_name %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url }}"{% if item.name == page.navbar_name %} aria-current="page"{% endif %}>{{ item.name }}
+                    <a class="nav-link" href="{{ item.url }}">{{ item.name }}
                         {% if item.url == page.url %}<span class="sr-only">(current)</span>{% endif %}
                     </a>
                 </li>
