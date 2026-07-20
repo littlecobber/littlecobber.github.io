@@ -1,10 +1,11 @@
 primary_name: "Yifan Wu"
 secondary_name: ""
-# navbar_name: "Yifan Wu"
-navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/> Yifan Wu'
+# navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/> Yifan Wu'
+navbar_name: ""
 
-positions:
-  - '<span class="no-break"><img src="assets/images/badges/boston-university-wordmark.svg" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
+# positions:
+#   - '<span class="no-break"><img src="assets/images/badges/boston-university-wordmark.svg" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
+positions: []
 
 email: "wuyifan1@bu.edu"
 gscholar: UruMKUkAAAAJ&hl
