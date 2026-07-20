@@ -8,25 +8,30 @@ body_attr: >-
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<div class="row">
-    <div class="col-12 col-lg-10">
+<div class="row publications-layout">
+    <div class="col-12 col-lg-10 publications-main">
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
+        <section class="publication-year" aria-labelledby="year-{{ year.name }}">
+            <div class="section-heading">
+                <h2 class="publication-year-title" id="year-{{ year.name }}">{{ year.name }}</h2>
+                <span class="publication-count">{{ num_papers }} publication{% unless num_papers == 1 %}s{% endunless %}</span>
+            </div>
+            <div class="publication-list">
             {% for item in year.items %}
                 {% include widgets/publication_item.html item=item %}
             {% endfor %}
-        </div>
+            </div>
+        </section>
         {% endfor %}
     </div>
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+    <aside class="col-2 d-none d-lg-block year-nav-column" aria-label="Publication years">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top year-nav">
             {% for year in pubs_by_year %}
             <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
             {% endfor %}
         </div>
-    </div>
+    </aside>
 
 </div>
