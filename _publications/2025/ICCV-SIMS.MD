@@ -25,7 +25,7 @@ authors:
   - Taku Komura
 
 links:
-  Paper: https://arxiv.org/abs/2411.19921
   Project Page: https://wenjiawang0312.github.io/projects/sims/
+  Paper: https://arxiv.org/abs/2411.19921
   Code: https://github.com/WenjiaWang0312/sims-stylized_hsi
 ---

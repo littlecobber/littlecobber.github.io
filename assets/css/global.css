@@ -264,3 +264,23 @@ img.lazy {
     background-color: #fff9db !important; /* Light yellow */
     border-left: 4px solid #fcc419 !important; /* Yellow border accent */
 }
+
+.text-profile-bio {
+    line-height: 1.55;
+}
+
+.text-profile-bio p {
+    margin-bottom: 0.75rem;
+}
+
+.text-profile-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.phd-callout {
+    color: #c62828;
+}
+
+@media screen and (max-width: 575.98px) {
+    .profile-card-body { padding: 1.5rem !important; }
+}

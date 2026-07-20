@@ -14,6 +14,6 @@ authors:
 - Peixu Xin
 - Janusz Konrad
 links:
-  Paper: https://arxiv.org/abs/2408.01878
   Project Page: https://littlecobber.github.io/CVPR2024-FBINeRF/
+  Paper: https://arxiv.org/abs/2408.01878
 ---
