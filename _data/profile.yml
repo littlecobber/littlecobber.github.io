@@ -4,7 +4,7 @@ secondary_name: ""
 navbar_name: '<img src="assets/images/Pride.png" alt="Yifan Wu" class="nav-img"/> Yifan Wu'
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/BU-icon.png" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
+  - '<span class="no-break"><img src="assets/images/badges/boston-university-wordmark.svg" alt="Boston University" class="inline-badge"/></span> M.S., Boston University (2024)'
 
 email: "wuyifan1@bu.edu"
 gscholar: UruMKUkAAAAJ&hl
@@ -17,10 +17,7 @@ linkedin: yifan-wu-37a58a258
 # orcid: 0000-0000-0000-0000
 
 short_bio: |
-  <p>Hi! I am currently an intern at <a href="https://www.tencent.com/en-us/">Tencent</a>, <a href="https://hunyuan.tencent.com/">Hunyuan</a> on video world model research. Previously, I interned at <a href="https://www.timistudios.com/#games">Timi Studio Group</a>, working on video generation research.</p>
-  <p>I served as a research assistant at the <a href="https://hku-cg.github.io/">CGVU Lab</a> at <a href="https://www.hku.hk/">The University of Hong Kong</a>, supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/taku">Prof. Taku Komura</a>.</p>
-  <p>Before that, I received my M.S. degree from <a href="https://www.bu.edu/">Boston University</a> and my B.Eng. degree with honors from <a href="https://english.yzu.edu.cn/index.htm">Yangzhou University</a>.</p>
-  <p>My current research investigates the foundations of the world model paradigm and its applications in robotics. <span class="phd-callout">I am seeking Ph.D. opportunities starting Fall 2027.</span></p>
+  <p>Hi! I am currently an intern at <a href="https://www.tencent.com/en-us/">Tencent</a>, <a href="https://hunyuan.tencent.com/">Hunyuan</a> on video world model research. Previously, I interned at <a href="https://www.timistudios.com/#games">Timi Studio Group</a>, working on video generation research. I served as a research assistant at the <a href="https://hku-cg.github.io/">CGVU Lab</a> at <a href="https://www.hku.hk/">The University of Hong Kong</a>, supervised by <a href="https://www.cs.hku.hk/index.php/people/academic-staff/taku">Prof. Taku Komura</a>. Before that, I received my M.S. degree from <a href="https://www.bu.edu/">Boston University</a> and my B.Eng. degree with honors from <a href="https://english.yzu.edu.cn/index.htm">Yangzhou University</a>. My current research investigates the foundations of the world model paradigm and its applications in robotics. <span class="phd-callout">I am seeking Ph.D. opportunities starting Fall 2027.</span></p>
 show_portrait: true
 portrait_url: assets/images/photos/NewAva.png
 portrait_caption: >-
@@ -28,11 +25,11 @@ portrait_caption: >-
 
 education:
 - name: Boston University
-  logo: assets/images/badges/BU-icon.png
+  logo: assets/images/badges/boston-university-wordmark.svg
   position: M.S. in Electrical and Computer Engineering
   date: Sep. 2022 - Jan. 2024
 - name: Yangzhou University
-  logo: assets/images/badges/YZU-icon.jpg
+  logo: assets/images/badges/yangzhou-university-mark.svg
   position: B.ENG. in Electrical Engineering
   date: Sep.2018 - Jun. 2022
 

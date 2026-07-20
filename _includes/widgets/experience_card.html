@@ -1,142 +1,88 @@
-<div class="row mt-3">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-
-                <div class="row">
-                    {% if site.data.profile.education %}
-                    <div class="col-md-6">
-                        <div class="mx-2 my-1">
-                            <h6>Education</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.education %}
-                                <li class="media mb-1">
-                                    <img src="{{ item.logo }}" alt="{{ item.name }}" style="width: 40px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <p class="my-0">{{ item.name }}</p>
-                                        <p class="small my-0">{{ item.dept }}</p>
-                                        <p class="small my-0">{{ item.position }} <em class="float-right">{{ item.date }}</em></p>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
+<section class="info-section overview-section" aria-label="Education and honors">
+    <div class="overview-grid">
+        {% if site.data.profile.education %}
+        <section class="overview-block" aria-labelledby="education-heading">
+            <h2 id="education-heading" class="section-title">Education</h2>
+            <ul class="education-list">
+                {% for item in site.data.profile.education %}
+                <li class="education-item">
+                    <img src="{{ item.logo }}" alt="{{ item.name }}" class="education-logo" loading="lazy">
+                    <div class="education-details">
+                        <h3 class="entry-title">{{ item.name }}</h3>
+                        {% if item.dept %}<p class="entry-dept">{{ item.dept }}</p>{% endif %}
+                        <div class="entry-meta">
+                            <span>{{ item.position }}</span>
+                            <time>{{ item.date }}</time>
                         </div>
                     </div>
-                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
 
-
-                    {% if site.data.profile.awards %}
-                    <div class="col-md-6">
-                        <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
-                            <ul class="list small pl-3 mb-1">
-                                {% for item in site.data.profile.awards %}
-                                <li>{{ item.name }} <em class="float-right">{{ item.date }}</em></li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %}
-
-<!--                     {% if site.data.profile.experience %}
-                    <div class="col-md-6">
-                        <div class="mx-2 my-1">
-                            <h6>Experience</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.experience %}
-                                <li class="media mb-1">
-                                    <img src="{{ item.logo }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <p class="my-0">{{ item.name }}</p>
-                                        <p class="small my-0">{{ item.dept }}</p>
-                                        <p class="small my-0">{{ item.position }} <em class="float-right">{{ item.date }}</em></p>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %} -->
-
-                </div>
-
-            </div>
-        </div>
+        {% if site.data.profile.awards %}
+        <section class="overview-block" aria-labelledby="awards-heading">
+            <h2 id="awards-heading" class="section-title">Honors &amp; Awards</h2>
+            <ul class="awards-list">
+                {% for item in site.data.profile.awards %}
+                <li>
+                    <span>{{ item.name }}</span>
+                    <time>{{ item.date }}</time>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
     </div>
-</div>
+</section>
 
-
-<div class="row mt-3">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <div class="row">
-                    {% if site.data.profile.news %}
-                    <div class="col">
-                        <div class="mx-2 my-1">
-                            <h6>News</h6>
-                            <ul class="mb-1">
-                                {% for item in site.data.profile.news %}
-                                <li>
-                                    <p class="my-0"><strong>{{ item.name }}</strong></p>
-                                    <p class="small my-0">{{ item.dept }}</p>
-                                    <p class="small my-0">{{ item.position }} <em class="float-right">{{ item.date }}</em></p>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+{% if site.data.profile.news %}
+<section class="info-section news-section" aria-labelledby="news-heading">
+    <div class="section-heading">
+        <h2 id="news-heading" class="section-title">News</h2>
     </div>
-</div>
+    <ul class="news-list">
+        {% for item in site.data.profile.news %}
+        <li>
+            <span class="news-marker" aria-hidden="true"></span>
+            <p>{{ item.name }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
 
-
-<div class="row mt-3">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <div class="mx-2 my-1">
-                    <h6 class="mb-4">Experience</h6>
-                    {% if site.data.profile.experience %}
-                        {% for item in site.data.profile.experience %}
-                        <div class="row mb-4 {% unless forloop.last %}border-bottom pb-4{% endunless %}">
-                            <div class="col-auto">
-                                <div class="experience-logo-box">
-                                    <img src="{{ item.logo }}" alt="{{ item.name }}" class="experience-logo-img {% if item.large_logo %}experience-logo-large{% endif %}">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <h6 class="font-weight-bold mt-2">{{ item.name }}</h6>
-                                <p class="small mb-1">{{ item.dept }}</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="small mb-0 font-weight-bold">{{ item.position }}</p>
-                                    <p class="small text-muted mb-0">{{ item.date }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+{% if site.data.profile.experience %}
+<section class="info-section experience-section" aria-labelledby="experience-heading">
+    <div class="section-heading">
+        <h2 id="experience-heading" class="section-title">Experience</h2>
     </div>
-</div>
-
+    <div class="experience-list">
+        {% for item in site.data.profile.experience %}
+        <article class="experience-row">
+            <div class="experience-logo-box">
+                <img src="{{ item.logo }}" alt="{{ item.name }}" class="experience-logo-img {% if item.large_logo %}experience-logo-large{% endif %}" loading="lazy">
+            </div>
+            <div class="experience-details">
+                <div class="experience-heading">
+                    <h3 class="entry-title">{{ item.name }}</h3>
+                    <time class="experience-date">{{ item.date }}</time>
+                </div>
+                {% if item.dept %}<p class="entry-dept">{{ item.dept }}</p>{% endif %}
+                <p class="experience-position">{{ item.position }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
 
 {% if site.data.profile.show_collaboration and site.data.profile.collaboration_img %}
-<div class="row mt-3">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <div class="mx-2 my-1">
-                    <h6 class="mb-3">Collaboration</h6>
-                    <img src="{{ site.data.profile.collaboration_img }}" alt="Collaboration Image" class="img-fluid rounded w-100">
-                </div>
-            </div>
-        </div>
+<section class="info-section collaboration-section" aria-labelledby="collaboration-heading">
+    <div class="section-heading">
+        <h2 id="collaboration-heading" class="section-title">Collaboration</h2>
     </div>
-</div>
+    <img src="{{ site.data.profile.collaboration_img }}" alt="Collaboration" class="collaboration-image" loading="lazy">
+</section>
 {% endif %}

@@ -1,87 +1,3 @@
-<!-- {% assign item = include.item %}
-<div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
-            {% if item.video %}
-            <video class="w-100 rounded-sm publication-media" autoplay loop muted playsinline>
-                <source src="{{ item.video }}" type="video/mp4">
-            </video>
-            {% else %}
-            <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm publication-media" src="assets/images/empty_300x200.png">
-            {% endif %}
-        </div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                {% for link in item.links %}
-                {% if link[1] == nil or link[1] == '' or link[1] == false %}
-                <span class="text-muted">[{{ link[0] }}]</span>
-                {% elsif link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                {% else %}
-                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-                {% endif %}
-                {% endfor %}
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
-    {% if item.video %}
-    <video class="w-100 publication-media-mobile" autoplay loop muted playsinline>
-        <source src="{{ item.video }}" type="video/mp4">
-    </video>
-    {% else %}
-    <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy card-img w-100 publication-media-mobile" src="assets/images/empty_300x200.png">
-    {% endif %}
-    <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
-        <div class="mb-auto"></div>
-        <div>
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted d-none d-sm-block">{{ item.abstract }}</p>
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                {% for link in item.links %}
-                {% if link[1] == nil or link[1] == '' or link[1] == false %}
-                <span class="text-muted">[{{ link[0] }}]</span>
-                {% elsif link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                {% else %}
-                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-                {% endif %}
-                {% endfor %}
-            </p>
-        </div>
-    </div>
-</div>
-
-<style>
-/* 桌面版媒体尺寸 */
-.publication-media {
-    max-width: 500px;  /* 最大宽度 */
-    max-height: 400px; /* 最大高度 */
-    object-fit: cover; /* 保持比例并填充容器 */
-}
-
-/* 移动版媒体尺寸 */
-.publication-media-mobile {
-    max-height: 400px; /* 最大高度 */
-    object-fit: cover; /* 保持比例并填充容器 */
-}
-
-/* 移除视频的交互效果 */
-video {
-    pointer-events: none; /* 禁用所有鼠标事件 */
-}
-</style>  -->
-
 {% assign item = include.item %}
 {% assign first_author = item.authors[0] %}
 {% assign highlight_class = "" %}
@@ -89,67 +5,34 @@ video {
     {% assign highlight_class = "publication-highlight" %}
 {% endif %}
 
-<div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray {{ highlight_class }}">
-        <div class="col-md-4 col-xl-3 mb-md-0 p-md-3">
-            {% if item.video %}
-            <video class="w-100 rounded-sm publication-media" autoplay loop muted playsinline preload="metadata" controls>
-                <source src="{{ item.video }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+<article class="publication-item {{ highlight_class }}">
+    <div class="publication-media-wrap">
+        {% if item.video %}
+        <video class="publication-media" data-autoplay="visible" muted loop playsinline preload="metadata" controls aria-label="{{ item.title }}">
+            <source src="{{ item.video }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        {% else %}
+        <img src="{{ item.cover }}" alt="{{ item.title }}" class="publication-media" loading="lazy">
+        {% endif %}
+    </div>
+
+    <div class="publication-content">
+        <h3 class="publication-title">{{ item.title }}</h3>
+        <p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+        <p class="publication-venue">{{ item.pub_pre }}<span>{{ item.pub }}</span>{{ item.pub_post }}{% if item.pub_date %} <time>{{ item.pub_date }}</time>{% endif %} {{ item.pub_last }}</p>
+        {% if item.abstract %}<p class="publication-abstract">{{ item.abstract }}</p>{% endif %}
+
+        <nav class="publication-links" aria-label="Publication links">
+            {% for link in item.links %}
+            {% if link[1] == nil or link[1] == '' or link[1] == false %}
+            <span class="publication-link-disabled">{{ link[0] }}</span>
+            {% elsif link[1].url %}
+            <a target="{{ link[1]['target'] }}" rel="noopener" href="{{ link[1]['url'] }}">{{ link[0] }}</a>
             {% else %}
-            <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm publication-media" src="assets/images/empty_300x200.png">
+            <a target="_blank" rel="noopener" href="{{ link[1] }}">{{ link[0] }}</a>
             {% endif %}
-        </div>
-        <div class="col-md-8 col-xl-9 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                {% for link in item.links %}
-                {% if link[1] == nil or link[1] == '' or link[1] == false %}
-                <span class="text-muted">[{{ link[0] }}]</span>
-                {% elsif link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                {% else %}
-                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-                {% endif %}
-                {% endfor %}
-            </p>
-        </div>
+            {% endfor %}
+        </nav>
     </div>
-</div>
-
-<div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0 {{ highlight_class }}" style="overflow-y: scroll;">
-    {% if item.video %}
-    <video class="w-100 publication-media-mobile" autoplay loop muted playsinline preload="metadata" controls>
-        <source src="{{ item.video }}" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    {% else %}
-    <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy card-img w-100 publication-media-mobile" src="assets/images/empty_300x200.png">
-    {% endif %}
-    <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
-        <div class="mb-auto"></div>
-        <div>
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted d-none d-sm-block">{{ item.abstract }}</p>
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                {% for link in item.links %}
-                {% if link[1] == nil or link[1] == '' or link[1] == false %}
-                <span class="text-muted">[{{ link[0] }}]</span>
-                {% elsif link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                {% else %}
-                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-                {% endif %}
-                {% endfor %}
-            </p>
-        </div>
-    </div>
-</div>
+</article>
