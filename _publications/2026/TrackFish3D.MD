@@ -16,5 +16,7 @@ authors:
   - Taku Komura
 
 links:
-  PDF (Coming Soon): false
+  Project Page (Coming Soon): false
+  Paper (Coming Soon): false
+  Code (Coming Soon): false
 ---
