@@ -79,13 +79,42 @@ awards:
   date: 2023
 
 news:
-- name: Established a startup Agent company at <a href="pionai.tech">pionai</a> as CTO 
-- name: three paper submitted to ICLR 2027
-- name: one paper submitted to ICRA 2027
-- name: one paper accepted to Neurips 2026 
-- name: one paper accepted to CVPR 2026
-- name: one paper accepted to ICCV 2025
-- name: one paper accepted to SIGGRAPH Aisa 2024 TOG
+- name: Three papers submitted to ICLR 2027
+  date: Sep. 2026
+  date_iso: "2026-09"
+- name: One paper accepted to NeurIPS 2026
+  date: Sep. 24, 2026
+  date_iso: "2026-09-24"
+- name: One paper submitted to ICRA 2027
+  date: Sep. 2026
+  date_iso: "2026-09"
+- name: Co-founded <a href="https://pionai.tech/">PionAI</a> as CTO
+  date: Jul. 2026
+  date_iso: "2026-07"
+- name: One paper accepted to CVPR 2026
+  date: Feb. 20, 2026
+  date_iso: "2026-02-20"
+- name: One paper accepted to ICCV 2025
+  date: Jun. 25, 2025
+  date_iso: "2025-06-25"
+- name: One paper accepted to SIGGRAPH Asia 2024 (TOG)
+  date: Jul. 28, 2024
+  date_iso: "2024-07-28"
+
+talks:
+- title: Collective Behavior Imitation Learning and World Models
+  venue: Sun Yat-sen University, Shenzhen Campus
+  logo: assets/images/badges/sun-yat-sen-university.jpg
+  date: Sep. 24, 2026
+  date_iso: "2026-09-24"
+
+service:
+  conferences:
+    - ICCV
+    - CVPR
+    - SIGGRAPH
+  journals:
+    - TOG
 
 
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 

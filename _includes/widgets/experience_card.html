@@ -47,9 +47,48 @@
         <li>
             <span class="news-marker" aria-hidden="true"></span>
             <p>{{ item.name }}</p>
+            <time datetime="{{ item.date_iso }}">{{ item.date }}</time>
         </li>
         {% endfor %}
     </ul>
+</section>
+{% endif %}
+
+{% if site.data.profile.talks %}
+<section class="info-section talks-section" aria-labelledby="talks-heading">
+    <div class="section-heading">
+        <h2 id="talks-heading" class="section-title">Talks</h2>
+    </div>
+    <div class="talks-list">
+        {% for item in site.data.profile.talks %}
+        <article class="talk-row">
+            <img src="{{ item.logo }}" alt="Sun Yat-sen University seal" class="talk-logo" loading="lazy">
+            <div class="talk-details">
+                <h3 class="entry-title">{{ item.title }}</h3>
+                <p class="talk-venue">{{ item.venue }}</p>
+            </div>
+            <time datetime="{{ item.date_iso }}">{{ item.date }}</time>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if site.data.profile.service %}
+<section class="info-section service-section" aria-labelledby="service-heading">
+    <div class="section-heading">
+        <h2 id="service-heading" class="section-title">Service</h2>
+    </div>
+    <div class="service-list">
+        <div class="service-row">
+            <h3 class="entry-title">Conference Reviewer</h3>
+            <p>{{ site.data.profile.service.conferences | join: ', ' }}</p>
+        </div>
+        <div class="service-row">
+            <h3 class="entry-title">Journal Reviewer</h3>
+            <p>{{ site.data.profile.service.journals | join: ', ' }}</p>
+        </div>
+    </div>
 </section>
 {% endif %}
 

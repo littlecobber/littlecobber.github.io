@@ -633,7 +633,7 @@ body.site-body {
 
 .news-list li {
     display: grid;
-    grid-template-columns: 8px minmax(0, 1fr);
+    grid-template-columns: 8px minmax(0, 1fr) auto;
     gap: 0.75rem;
     align-items: baseline;
     padding: 0.55rem 0;
@@ -646,11 +646,59 @@ body.site-body {
     font-size: 0.9rem;
 }
 
+.news-list time,
+.talk-row time {
+    color: var(--color-muted);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
 .news-marker {
     width: 6px;
     height: 6px;
     background: var(--color-warm);
     border-radius: 50%;
+}
+
+.talks-list,
+.service-list {
+    border-top: 1px solid var(--color-line);
+}
+
+.talk-row {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.talk-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.talk-venue,
+.service-row p {
+    margin: 0.2rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.86rem;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.service-row p {
+    margin-top: 0;
 }
 
 .experience-list {
@@ -1004,6 +1052,33 @@ video.publication-media {
         display: block;
         margin-top: 0.2rem;
         text-align: left;
+    }
+
+    .news-list li {
+        grid-template-columns: 8px minmax(0, 1fr);
+    }
+
+    .news-list time {
+        grid-column: 2;
+    }
+
+    .talk-row {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 0.7rem;
+    }
+
+    .talk-logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .talk-row time {
+        grid-column: 2;
+    }
+
+    .service-row {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
     }
 
     .experience-row {
