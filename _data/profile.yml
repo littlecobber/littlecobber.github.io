@@ -114,7 +114,7 @@ service:
     - CVPR
     - SIGGRAPH
   journals:
-    - TOG
+    - ACM Transactions on Graphics (TOG)
 
 
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
