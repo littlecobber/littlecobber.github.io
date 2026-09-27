@@ -16,7 +16,7 @@ authors:
   - Taku Komura
 
 links:
-  Project Page (Coming Soon): false
+  Project Page: https://pattgene.github.io/trackfish3d-projectpage/
   Paper (Coming Soon): false
   Code (Coming Soon): false
 ---
