@@ -112,6 +112,7 @@ service:
   conferences:
     - ICCV
     - CVPR
+    - ICLR
     - SIGGRAPH
   journals:
     - ACM Transactions on Graphics (TOG)
