@@ -79,6 +79,9 @@ awards:
   date: 2023
 
 news:
+- name: <a href="https://hy-nomas.hy.tencent.com/">Hy-Nomas</a> is now live
+  date: Oct. 21, 2026
+  date_iso: "2026-10-21"
 - name: Three papers submitted to ICLR 2027
   date: Sep. 2026
   date_iso: "2026-09"
